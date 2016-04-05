@@ -1,0 +1,14 @@
+<h1>Committee Lookup</h1>
+
+<form>
+  <div class="form-group">
+    <label for="chamber">Enter Chamber, (senate, house, joint)</label>
+    {{#x-select action="getCommittees1"}}
+    <option> </option>
+      {{#x-option value='all'}}All{{/x-option}}
+      {{#x-option value='house'}}House{{/x-option}}
+      {{#x-option value='senate'}}Senate{{/x-option}}
+      {{#x-option value='joint'}}Joint{{/x-option}}
+    {{/x-select}}
+  </div>
+</form>

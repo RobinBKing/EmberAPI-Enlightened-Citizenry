@@ -6,8 +6,8 @@ export default Ember.Route.extend({
     zipLookup(params) {
       this.transitionTo('results', params.zip);
     },
-    getCommittees(){
-      this.transitionTo('committees');
+    getCommittees3(selection){
+      this.transitionTo('committees', selection);
     }
   }
 });
